@@ -12,11 +12,11 @@
   <p id="description">Thank you for taking the time to help us improve the platform</p>
   <form action="POST" id="survey-form">
 
-    <label for="name">username</label>
-    <input id="name" type="text" placeholder="name">
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" placeholder="email">
-    <label for="number">Number (0-9)</label>
+    <label id="name-label" for="name">username</label>
+    <input required id="name" type="text" placeholder="name">
+    <label id="email-label" for="email">Email</label>
+    <input required type="email" name="email" id="email" placeholder="email">
+    <label id="number-label" for="number">Number (0-9)</label>
     <input type="number" min="0" max="9" name="number" id="number" placeholder="number">
     <select name="dropdown" id="dropdown">
       <option value="">Option 1</option>
@@ -24,9 +24,9 @@
     </select>
     <br>
     <label for="radio_01">Radio_1</label>
-    <input type="radio" name="Sample_Radio" id="radio_01">
+    <input type="radio" name="Sample_Radio" id="radio_01" value="radio01">
     <label for="radio_02">Radio_2</label>
-    <input type="radio" name="Sample_Radio" id="radio_02">
+    <input type="radio" name="Sample_Radio" id="radio_02" value="radio02">
     <br>
 
     <label for="checkbox_frontend">Front-End</label>
