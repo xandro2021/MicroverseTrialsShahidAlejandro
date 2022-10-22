@@ -8,75 +8,67 @@
 </head>
 
 <body>
-  <h1 id="title">freeCodeCamp Survey Form</h1>
-  <p id="description">Thank you for taking the time to help us improve the platform</p>
-  <form action="POST" id="survey-form">
-    <div id="namegroup">
-      <label id="name-label" for="name">username</label>
-      <input required id="name" type="text" placeholder="name">
-    </div>
-    <div id="emailgroup">
-      <label id="email-label" for="email">Email</label>
-      <input required type="email" name="email" id="email" placeholder="email">
-    </div>
-    <div id="numbergroup">
-      <label id="number-label" for="number">Number (0-9)</label>
-      <input type="number" min="0" max="9" name="number" id="number" placeholder="number">
-    </div>
-    <div id="optionsgroup">
-      <label for="dropdown">Options</label>
-      <select name="dropdown" id="dropdown">
-        <option value="">Option 1</option>
-        <option value="">Option 2</option>
-      </select>
-    </div>
-    <div id="radiogroup">
-      <div>
-        <label for="radio_01">Radio_1</label>
-        <input type="radio" name="Sample_Radio" id="radio_01" value="radio01">
+  <main id="main">
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form action="POST" id="survey-form">
+      <div id="namegroup">
+        <label id="name-label" for="name">username</label>
+        <input required id="name" type="text" placeholder="name">
       </div>
-      <div>
-        <label for="radio_02">Radio_2</label>
-        <input type="radio" name="Sample_Radio" id="radio_02" value="radio02">
+      <div id="emailgroup">
+        <label id="email-label" for="email">Email</label>
+        <input required type="email" name="email" id="email" placeholder="email">
       </div>
-    </div>
-
-    <section id="checkboxgroup">
-      <div id="frontend-group">
-        <label for="checkbox_frontend">Front-End</label>
-        <input type="checkbox" value="Front-End" name="checkbox_frontend" id="checkbox_frontend">
+      <div id="numbergroup">
+        <label id="number-label" for="number">Number (0-9)</label>
+        <input type="number" min="0" max="9" name="number" id="number" placeholder="number">
       </div>
-      <div id="backend-group">
-        <label for="checkbox_backend">Back-End</label>
-        <input type="checkbox" value="Back-End" name="checkbox_backend" id="checkbox_backend">
+      <div id="optionsgroup">
+        <label for="dropdown">Options</label>
+        <select name="dropdown" id="dropdown">
+          <option value="">Option 1</option>
+          <option value="">Option 2</option>
+        </select>
       </div>
-      <div id="visualdata">
-        <label for="checkbox_datavisualizacion">Data Visualizacion</label>
-        <input type="checkbox" value="datavisualizacion" name="checkbox_datavisualizacion"
-          id="checkbox_datavisualizacion">
+      <div id="radiogroup">
+        <div>
+          <label for="radio_01">Radio_1</label>
+          <input type="radio" name="Sample_Radio" id="radio_01" value="radio01">
+        </div>
+        <div>
+          <label for="radio_02">Radio_2</label>
+          <input type="radio" name="Sample_Radio" id="radio_02" value="radio02">
+        </div>
       </div>
-    </section>
 
-    <div id="textAreaGroup">
-      <p>Any comments or suggestions?</p>
-      <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
-    </div>
+      <section id="checkboxgroup">
+        <div id="frontend-group">
+          <label for="checkbox_frontend">Front-End</label>
+          <input type="checkbox" value="Front-End" name="checkbox_frontend" id="checkbox_frontend">
+        </div>
+        <div id="backend-group">
+          <label for="checkbox_backend">Back-End</label>
+          <input type="checkbox" value="Back-End" name="checkbox_backend" id="checkbox_backend">
+        </div>
+        <div id="visualdata">
+          <label for="checkbox_datavisualizacion">Data Visualizacion</label>
+          <input type="checkbox" value="datavisualizacion" name="checkbox_datavisualizacion"
+            id="checkbox_datavisualizacion">
+        </div>
+      </section>
 
-    <button type="submit" id="submit">Submit</button>
+      <div id="textAreaGroup">
+        <p>Any comments or suggestions?</p>
+        <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+      </div>
 
-  </form>
+      <button type="submit" id="submit">Submit</button>
 
-
-
-
-
-
-
+    </form>
 
 
-
-
-
+  </main>
 
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
