@@ -1,0 +1,59 @@
+#+title: Paircoding Exercises Shahid Islam and Alejandro Salazar
+#+PROPERTY: header-args:js :tangle generatedFrom_README/solution01.js
+#+auto-tangle: t;
+
+* Exercise 01
+** Apple and Orange
+[[https://www.hackerrank.com/challenges/apple-and-orange/problem][Link to problem in HackerRank]]
+Solution:
+#+begin_src js :tangle generatedFrom_README/solution01.js
+// This document was generated automatically from the paircodingExercises.org
+// Read it from the .org file to get the problem link
+function countApplesAndOranges(s, t, a, b, apples, oranges) {
+    // Write your code here
+    let orangesInrange = 0;
+    let applesInrange = 0;
+    for(let i = 0; i < apples.length; i++){
+        apples[i] = apples[i] + a;
+        if(apples[i]>=s && apples[i]<=t){
+            applesInrange++;
+        }
+    }
+
+    for(let i = 0; i < oranges.length; i++){
+        oranges[i] = oranges[i] + b;
+        if(oranges[i]>=s && oranges[i]<=t){
+            orangesInrange++;
+        }
+    }
+
+    console.log(applesInrange);
+    console.log(orangesInrange);
+}
+#+end_src
+* Exercise 02
+** Viral Advertising
+[[https://www.hackerrank.com/challenges/strange-advertising/problem][Link to the problem in HackerRank]]
+Solution:
+#+begin_src js :tangle generatedFrom_README/solution02.js
+// This document was generated automatically from the paircodingExercises.org
+// Read it from the .org file to get the problem link
+function viralAdvertising(n) {
+    // Write your code here
+  // let cumulative = 0;
+  let shared = 5;
+  let liked = 0;
+  let total = 0;
+  // let liked = math.floor(shared)
+  // let total += liked;
+
+  for(let i = 0; i < n; i++){
+     liked = Math.floor(shared/2)
+     total += liked;
+    shared = liked*3;
+  }
+  return total;
+  //
+}
+
+#+end_src
